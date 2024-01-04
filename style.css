@@ -1,0 +1,200 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    background-color: #dedede;
+}
+
+header{
+    background-image: linear-gradient(to right, rgb(0,80,197), rgb(80,19,195));
+    box-shadow: 0px 3px 10px #464646;
+    
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+}
+.logo-menu{
+    display: flex;
+    align-items: center;
+}
+.logo-menu h1{
+    color: #fff;
+}
+
+.link{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 1.15rem;
+    font-weight: 400;
+}
+
+.bt button{
+    border: none;
+    background: rgb(0, 217, 255);
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+
+.bt button a{
+    text-decoration:none;
+    color: #fff;
+    font-weight: 500;
+}
+.mobile-menu{
+    background-color: rgba(27, 27, 27, 0.952);
+    width: 30%;
+    height: 100vh;
+    position: absolute;
+    margin-top: 5px;
+    margin-left: -16px;
+    
+     
+ }
+ .mobile-menu ul{
+    display:flex;
+    flex-direction: column;
+    padding:  1rem;
+}
+.mobile-menu .item-Lista{
+    display: block;
+    padding: 1rem 1rem;
+}
+
+
+  .mobile-menu-icon button{
+    background-color: aqua;
+    border: none;
+    border-radius: 50%;
+    padding: 3px 6px;
+  
+    }
+
+.mobile-menu{
+    display: none;
+}
+section{
+    background-color: #fff;
+    margin: 0 15px;
+}
+#condo{
+    background: url('../imagens/centralidade.jpg') no-repeat center center;
+    background-size: cover;
+    height: 220px;
+    margin: 0 15px;
+}
+.servicos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    background-color: #fff;
+    margin: 0 auto;
+    padding-top: 30px;
+    border-bottom-left-radius:10px ;
+    border-bottom-right-radius:10px ;
+    margin-bottom: 1rem;
+}
+
+div .icon{
+    padding: 10px;
+    width: 100px;
+    background-color: rgb(214, 224, 224);;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 3px 3px black;
+}
+div .icon img{
+    width: 50%; 
+}
+
+.ff p{
+    padding: 15px;
+    background-image: linear-gradient(to right, rgb(80,19,195), rgb(0,80,197));
+    color: #fff;
+}
+
+
+div p{
+    padding: 0 10px;
+}
+.open{
+    display: block;
+    justify-content: space-around;
+}
+
+@media screen and (max-width:600px) {
+    .servicos{
+        width: 350px;
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+     .icon{
+        width: 300px;
+    }
+    
+    div .icon img{
+        width: 7dvh; 
+    }
+    
+    .menu{
+        padding: 0.5rem 1rem;
+    }
+    .item-Lista{
+        display: none;
+    }
+
+    .item-Lista{
+        display: none;
+    }
+    .mobile-menu{
+       background-color: rgba(27, 27, 27, 0.952);
+       width: 70%;
+       height: 100vh;
+       position: absolute;
+       margin-left: -30px;
+    
+    }
+
+    .mobile-menu ul{
+        display:flex;
+        flex-direction: column;
+        padding:  1rem;
+    }
+
+    .mobile-menu .item-Lista{
+        display: block;
+        padding: 1rem 2rem;
+    }
+
+    .mobile-menu .bt{
+        display: block;
+        padding: 1rem 2rem;
+        
+    }
+
+    .mobile-menu .bt  a{
+        width: 100%;
+    }
+
+    .open{
+        display: block;
+    }
+    #condo{
+        height: 110px;
+    }
+    div .icon{
+        width: 80px;
+    }
+
+}
+
+/*width: 1115px;
+    transform: translate3d(-223px, 0px, 0px);
+    transition: all 0.25s ease 0s;
